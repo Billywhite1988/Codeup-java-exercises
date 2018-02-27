@@ -44,19 +44,19 @@ public class HelloWorld {
         System.out.println(++y);
         System.out.println(y);
 
-        x = 4;
-        // newValueForVariable = oldValueForVariable + 5;
-        x += 5;
-
-        x = 3;
-        y = 4;
-        // newValueForOldVarName = OldValueForOldVarName * x;
-        y *= x;
-
-        x = 10;
-        y = 2;
-        x /= y;
-        y -= x;
+//        x = 4;
+//        // newValueForVariable = oldValueForVariable + 5;
+//        x += 5;
+//
+//        x = 3;
+//        y = 4;
+//        // newValueForOldVarName = OldValueForOldVarName * x;
+//        y *= x;
+//
+//        x = 10;
+//        y = 2;
+//        x /= y;
+//        y -= x;
 
 
 
@@ -65,4 +65,3 @@ public class HelloWorld {
 };
 
 
-};
