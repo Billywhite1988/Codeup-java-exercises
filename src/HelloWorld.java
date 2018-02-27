@@ -1,7 +1,7 @@
 
 public class HelloWorld {
 
-    /* My awesome main method (entry point to the application) */
+
     public static void main(String[] args) {
         // declare the integer variable.
         int myFavoriteNumber;
