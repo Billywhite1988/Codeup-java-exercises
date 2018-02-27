@@ -13,7 +13,7 @@ public class ConsoleExercises {
 
 
 //      Prompt a user to enter 3 words and store each of them in a separate variable, then display them back, each on a newline.
-//        System.out.println("Please enter three words");
+        System.out.println("Please enter three words");
 //
         String firstWord, secondWord, thirdWord;
 
@@ -27,6 +27,8 @@ public class ConsoleExercises {
         System.out.println(thirdWord);
 
 //      Prompt a user to enter a sentence, then store that sentence in a String variable using the .next method, then display that sentence back to the user.
+
+//       scanner.nextLine();
 
         System.out.println("Please enter a sentence: ");
 
