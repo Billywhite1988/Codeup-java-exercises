@@ -13,9 +13,18 @@ public class StringExercise {
                 // exercise 2
                 // Check "this" out!, "s inside of "s!
                 + "Check \"this\" out!, \"s inside of \"s!"
-                + "\n ------ \n";
+                + "\n ------ \n"
 
+                // Exercise 3
+                // In windows, the main drive is usually C:\
+                + "In windows, the main drive is usually C:\\"
+                + "\n ------ \n"
 
+                // exercise 4
+                //    I can do backslashes \, double backslashes \\,
+                //    and the amazing triple backslash \\\!
+                + "I can do backslashes \\, double " + "\\" + "\\" + ",\n"
+                + "and the amazing triple backslash \\\\\\!";
 
         System.out.println(message);
     }
