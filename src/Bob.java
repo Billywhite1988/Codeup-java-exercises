@@ -10,15 +10,25 @@ import java.util.Scanner;
 
             String userInput = scan.nextLine();
 
-            // Bob answers 'Sure.' if you ask him a question.
+            // Bob answers 'Sure.' if you ask him a question.(Question mark trigger responds
             boolean endsWithQuestionMark = userInput.endsWith("?");
 
-            // Bob answers "Whoa, chill out!" if you yell (Yelling is all uppercase or ending with a ! character
-            boolean isYelling = userInput.equals(userInput.toUpperCase()) || userInput.endsWith("!");
+            // Bob answers "Whoa, chill out!" if you yell (UPPERCASE trigger responds
+            boolean isYelling = userInput.equals(userInput.toUpperCase());
 
-            // Bob says "Fine. Be that way" if you don't actually say anything
+            // Bob says "Fine. Be that way" if you don't actually say anything(Pressing return trigger responds
             boolean didNotSayAnything = userInput.trim().isEmpty();
 
+            if(endsWithQuestionMark) {
+                System.out.println("Sure.");
+            } else if(isYelling) {
+                System.out.println("Whoa, chill out!");
+            } else if(didNotSayAnything) {
+                System.out.println("Fine. Be that way");
+            } else {
+                System.out.println("Whatever");
+            }
 
+        }
     }
 
