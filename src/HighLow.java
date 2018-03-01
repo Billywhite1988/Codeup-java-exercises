@@ -46,6 +46,27 @@ public class HighLow {
         return gameNotWon;
     }
 
+    public static int randomWithRange(int min, int max)
+    {
+        int range = (max - min) + 1;
+        return (int)(Math.random() * range) + min;
+    }
+
+
+    public static int getInteger(int min, int max, Scanner sc) {
+        if (!sc.hasNextInt()) {
+            System.out.println("Not a number!");
+            return getInteger(min, max, sc);
+        }
+        int userInput = sc.nextInt();
+        if (userInput >= min && userInput <= max) {
+            return userInput;
+        } else {
+            System.out.println("Number not in range!");
+            return getInteger(min, max, sc);
+        }
+    }
+
 
 
 }
