@@ -55,9 +55,9 @@ public class MethodsExercises {
             System.out.println("Not a number!");
             return getInteger(min, max);
         }
-        int userInput = sc.nextInt();
-        if (userInput >= min && userInput <= max) {
-            return userInput;
+        int number = sc.nextInt();
+        if (number >= min && number <= max) {
+            return number;
         } else {
             System.out.println("Number not in range!");
             return getInteger(min, max);
@@ -103,6 +103,7 @@ public class MethodsExercises {
     }
 
     public static void rollDiceGame(Scanner sc) {
+
         String userChoice;
         System.out.print("Please enter the number of sides for the dice: ");
         int numberSides = getInteger(1, 20);
