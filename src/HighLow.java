@@ -67,6 +67,13 @@ public class HighLow {
         }
     }
 
-
+    public static String getYesOrNo(Scanner sc) {
+        String userChoice;
+        do {
+            System.out.println("Do you wish to play again? [y/n]: ");
+            userChoice = sc.next().trim();
+        } while (!userChoice.equalsIgnoreCase("y") && !userChoice.equalsIgnoreCase("n"));
+        return userChoice;
+    }
 
 }
