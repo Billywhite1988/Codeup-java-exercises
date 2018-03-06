@@ -1,34 +1,53 @@
 package movies;
 
+/**
+ * - private properties
+ * - a constructor that sets those properties
+ * - getters and setters
+ */
 public class Movie {
-    private String name;
-    private String category;
+    private String title;
+    private String genre;
+    private int rating;
 
-    public Movie(String name, String category) {
-        this.name = name;
-        this.category = category;
+    public Movie(String title, String genre) {
+        this.title = title;
+        this.genre = genre;
     }
 
-    public String getName() {
-        return name;
+    public int getRating() {
+        return rating;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
-    public String getCategory() {
-        return category;
+    public String getTitle() {
+        return title;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", genre='" + genre + '\'' +
+                ", rating=" + rating +
+                '}';
     }
 }
-
-
-
-
 
 
 
