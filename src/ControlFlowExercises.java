@@ -129,12 +129,12 @@ public class ControlFlowExercises {
 //
 //
 //
-////        ======================================================= Convert given number grades into letter grades.
+////        ======================================================= Convert given number grades.grades into letter grades.grades.
 ////
 ////        Prompt the user for a numerical grade from 0 to 100.
 ////        Display the corresponding letter grade.
 ////        Prompt the user to continue.
-////        Assume that the user will enter valid integers for the grades.
+////        Assume that the user will enter valid integers for the grades.grades.
 ////        The application should only continue if the user agrees to.
 ////        Grade Ranges:
 //
