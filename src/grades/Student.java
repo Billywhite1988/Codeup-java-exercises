@@ -5,6 +5,7 @@ public class Student {
 
     private String name;
 
+
 //    declaring a arraylist
     private ArrayList<Integer> grades;
 
@@ -40,7 +41,9 @@ public class Student {
 
 }
 
-//
+
+
+
 //// Write just enough code in the main method to test the class's methods before using this class elsewhere...
 public static void main(String[] args) {
         System.out.println("Testing the Student class");
@@ -52,6 +55,7 @@ public static void main(String[] args) {
         student.addGrade(80);
         double expectedGrade = (100 + 90 + 80) / 3;
         System.out.println("The average is " + expectedGrade);
+
 
 
         }
