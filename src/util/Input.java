@@ -27,11 +27,12 @@ public class Input {
 
     public int getInt() {
         try {
-            return Integer.parseInt(this.input.nextLine());
+            return Integer.valueOf(this.input.nextLine());
         } catch(NumberFormatException e) {
-            System.out.print("Invalid Input, Try Again: ");
+            System.out.print("Exception caught!!! Invalid Input, Try Again: ");
             return getInt();
         }
+
     }
 
     public int getInt(boolean prompt) {
@@ -51,9 +52,9 @@ public class Input {
 
     public double getDouble() {
         try {
-            return Double.parseDouble(this.input.nextLine());
+            return Double.valueOf(this.input.nextLine());
         } catch(NumberFormatException e) {
-            System.out.print("Invalid Input, Try Again: ");
+            System.out.print("Exception caught!!! Invalid Input, Try Again: ");
             return getDouble();
         }
     }
@@ -78,7 +79,7 @@ public class Input {
             System.out.print("Enter A Binary Number: ");
             return Integer.valueOf(this.input.nextLine(), 2);
         } catch (NumberFormatException e) {
-            System.out.print("Invalid Binary, try again: ");
+            System.out.print("Exception caught!!! Invalid Input, Try Again: ");
             return getBinary();
         }
     }
@@ -88,7 +89,7 @@ public class Input {
             System.out.print("Enter A Hex Number: ");
             return Integer.valueOf(this.input.nextLine(), 16);
         } catch (NumberFormatException e) {
-            System.out.print("Invalid Hex, try again: ");
+            System.out.print("Exception caught!!! Invalid Input, Try Again: ");
             return getHex();
         }
     }
