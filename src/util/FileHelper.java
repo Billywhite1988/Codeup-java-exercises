@@ -1,9 +1,8 @@
 package util;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
+import javax.tools.StandardLocation;
+import java.io.*;
+import java.nio.file.*;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -12,6 +11,7 @@ public class FileHelper {
 
     public static List<String> slurp(String filepath) {
         List<String> data = new ArrayList<>();
+
 
         try {
             data = Files.readAllLines(Paths.get(filepath));
@@ -56,7 +56,39 @@ public class FileHelper {
         List<String> test = Arrays.asList("Abcd", "Efg", "Hijk");
         spit("test", test);
         makeExciting("test");
+        System.out.println(test);
     }
 }
+        //Move file to a new location
 
 
+//        InputStream in = null;
+////        OutputStream out = null;
+////
+////        try {
+////
+////            File oldFile = new File("/Users/user/IdeaProjects/codeup-java-exercises/src/util/FileHelper.java");
+////            File newFile = new File("/Users/user/IdeaProjects/codeup-java-exercises/src/shapes/Circle.java");
+////
+////            in = new FileInputStream(oldFile);
+////            out = new FileOutputStream(newFile);
+////
+////            byte[] moveBuff = new byte[1024];
+////
+////            int butesRead;
+////
+////            while ((butesRead = in.read(moveBuff)) > 0) {
+////                out.write(moveBuff, 0, butesRead);
+////            }
+////
+////            in.close();
+////            out.close();
+////
+////            oldFile.delete();
+////
+////            System.out.println("The File was successfully moved to the new folder");
+////
+////        } catch (IOException e) {
+////            e.printStackTrace();
+////        }
+////    }
