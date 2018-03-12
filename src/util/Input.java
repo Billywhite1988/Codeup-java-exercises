@@ -5,22 +5,27 @@ import java.util.Scanner;
 public class Input {
 
     private Scanner input;
+    private int min;
+    private int max;
+    private boolean prompt;
 
     public String getString() {
         return this.input.nextLine();
     }
 
     public String getString(boolean prompt) {
+        this.prompt = prompt;
         System.out.print("Enter A String: ");
         return getString();
     }
 
-    public boolean yesNo() {
+    private boolean yesNo() {
         String s = this.input.nextLine();
         return "y".equalsIgnoreCase(s) || "yes".equalsIgnoreCase(s);
     }
 
     public boolean yesNo(boolean prompt) {
+        this.prompt = prompt;
         System.out.print("(Yes/No): ");
         return yesNo();
     }
@@ -36,16 +41,20 @@ public class Input {
     }
 
     public int getInt(boolean prompt) {
+        this.prompt = prompt;
         System.out.print("Enter An Integer: ");
         return getInt();
     }
 
-    public int getInt(int min, int max) {
+    private int getInt(int min, int max) {
         int n = getInt();
         return ( n >= min && n <= max ) ? n : getInt(min, max);
     }
 
     public int getInt(int min, int max, boolean prompt) {
+        this.min = min;
+        this.max = max;
+        this.prompt = prompt;
         System.out.printf("Enter an Integer between %d and %d: ", min, max);
         return getInt(min, max);
     }
@@ -60,16 +69,18 @@ public class Input {
     }
 
     public double getDouble(boolean prompt) {
+        this.prompt = prompt;
         System.out.print("Enter A Double: ");
         return getDouble();
     }
 
-    public double getDouble(double min, double max) {
+    private double getDouble(double min, double max) {
         double n = getDouble();
         return ( n >= min && n <= max ) ? n : getDouble(min, max);
     }
 
     public double getDouble(double min, double max, boolean prompt) {
+        this.prompt = prompt;
         System.out.printf("Enter a Double between %f and %f: ", min, max);
         return getDouble();
     }
