@@ -6,6 +6,7 @@ import javax.servlet.http.*;
     public class HelloServlets extends HttpServlet {
         private int counter = 0;
 
+
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             response.setContentType("text/html");
 
